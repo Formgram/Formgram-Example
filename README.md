@@ -65,7 +65,7 @@ to see all the entries that users entered into this form.
 <h1>Upcoming Releases</h1>
 In the next release, you'll be able to create your own forms and other apps/people can use your new forms too.
 
-In the meantime, fell free to email me at henry@formgram.com with an example of a form you'd like created and I'll create it for you to use.
+In the meantime, fell free to email me at henry@formgram.com with an example of a form you'd like created and we'll create it for you to use.
 
 <h1>Notes</h1>
 In addition to being cross-platform, everything is powered by the cloud, so you can use Formgram in a modular plug-in-play way.  
