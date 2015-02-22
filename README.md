@@ -27,8 +27,8 @@ The number 18 is the identifier for an example appointment form.
 
 <h1>Create your own form</h1>
 If you've registered on http://formgram5.azurewebsites.net/m then use your username, if not, use "guest"
-    NSString* username = @"guest";
-    
+    <code>NSString* username = @"guest";</code>
+
 The identifier of the form you want to show on the screen. Change this number to change the form that is shown to the user to be filled out. If you don't need to create a brand new form and want to just use an existing form that someone else already created, then just set this to the multipage_form_id of the form you want to use, e.g. int multipageFormId = 18;
 In this case, we're creating a brand new form and we're naming that form "this is anything I want to title my new form"
 Form titles do "not" need to be unique
