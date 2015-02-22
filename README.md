@@ -96,6 +96,7 @@ In a future release, you'll be able to update a field you've created. E.g. chang
 <h1>Notes</h1>
 In addition to being cross-platform, everything is powered by the cloud, so you can use Formgram in a modular plug-in-play way.  
 
+The above steps are atomic such that you can perform them in any order.  For example, you can fill out a form someone else created, then create a new form for yourself, then look at what's been filled out in another form created by yet another person, then come back and fill out the form you created earlier, then look at the what you filled out, etc.
+
 This XCode project was built using Version 6.1.1 (6A2008a)
 
-The above steps are atomic such that you can perform them in any order.  For example, you can fill out a form someone else created, then create a new form for yourself, then look at what's been filled out in another form created by yet another person, then come back and fill out the form you created earlier, then look at the what you filled out, etc.
