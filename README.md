@@ -1,7 +1,5 @@
 # Formgram-Example
-First Release
-
-Use this set of web services to create forms and form fields in a free database then display the form and save information typed into those fields back into the free database.
+Formgram is a set of web services to create forms and form fields in a free database then display the form and save information typed into those fields back into the free database.
 
 This is the initial release of Formgram to help others tap into a shared cloud of existing forms.
 
