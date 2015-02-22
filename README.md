@@ -1,9 +1,9 @@
 # Formgram-Example
-Formgram is a set of web services to create forms and form fields in a free database then display the form and save information typed into those fields back into the free database.
+Formgram is a set of web services (API) to create forms and form fields in a free database then display the form and save information typed into those fields back into the free database.
 
 This is the initial release of Formgram to help others tap into a shared cloud of existing forms.
 
-This is done using web services to be cross-platform so any technology stack (such as Android, javascript, iOS, even desktop, etc.) can take advantage of this.
+This is done using web services to be cross-platform so any technology stack (such as Android, javascript, iOS, even desktop, etc.) can take advantage of this to dynamically create forms at runtime.
 
 Formgram is also multi-platform so you can perform any of the below setup steps on any device/platform.  For example, you can create a new form on http://formgram5.azurewebsites.net/m using a desktop browser, then open it using this iOS app to fill it out, then look at what you've filled out using an Android tablet, etc.
 
