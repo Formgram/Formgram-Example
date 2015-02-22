@@ -7,7 +7,7 @@ This is the initial release of Formgram to help others tap into a shared cloud o
 
 This is done using web services to be cross-platform so any technology stack (such as Android, javascript, iOS, even desktop, etc.) can take advantage of this.
 
-Formgram is also multi-platform so you can perform any of the below setup steps on any device/platform.  For example, you can create a new form on formgram.com using a desktop browser, then open it using this iOS app to fill it out, then look at what you've filled out using an Android tablet, etc.
+Formgram is also multi-platform so you can perform any of the below setup steps on any device/platform.  For example, you can create a new form on http://formgram5.azurewebsites.net/m using a desktop browser, then open it using this iOS app to fill it out, then look at what you've filled out using an Android tablet, etc.
 
 The code is very simple:
 
@@ -38,7 +38,7 @@ Update that multipage_form_id in this Formgram Example XCode then build and run.
 
 You'll see an example appointment form show up and your users will be able to fill out this sample form.
 
-In the future, you'll be able to discover/explore existing forms using this app, and Android app, or even a Microsoft app, etc.  Currently, the best way to discover forms is through the formgram.com website.
+In the future, you'll be able to discover/explore existing forms using this app, and Android app, or even a Microsoft app, etc.  Currently, the best way to discover forms is through the http://formgram5.azurewebsites.net/m website.
 
 <h1>Anyone can fill out the form now</h1>
 You can type anything in this form, choose from the drop down lists, etc.
@@ -52,7 +52,7 @@ select the save button at the bottom of the form.
 
 Ignore the error message that shows up saying "Server Error in '/m' Application. Object reference not set to an instance of an object..."
 
-This secuirty error is showing up since the user has not registered on formgram.com and is trying to login as guest.  This is ok since we're using a generic guest account.  The information typed into the form "is" saved however.  So you can see what saved by going to the URL in urlWithFormIds.
+This secuirty error is showing up since the user has not registered on http://formgram5.azurewebsites.net/m and is trying to login as guest.  This is ok since we're using a generic guest account.  The information typed into the form "is" saved however.  So you can see what saved by going to the URL in urlWithFormIds.
 
 This form can be filled out from inside an Android app as well.  Just use the Android WebView class' loadUrl method by passing it the urlWithFormIds.
 
