@@ -7,6 +7,10 @@ This is the initial release of Formgram to help others tap into a shared cloud o
 
 This is done using web services to be cross-platform so any technology stack (such as Android, javascript, iOS, even desktop, etc.) can take advantage of this.
 
+Formgram is also multi-platform so you can perform any of the below setup steps on any device/platform.  For example, you can create a new form on formgram.com using a desktop browser, then open it using this iOS app to fill it out, then look at what you've filled out using an Android tablet, etc.
+
+The code is very simple:
+
     int multipageFormGroupInstanceId = [self AddFormInstance:18 myUsername:@"guest"];
 
     NSString *urlWithFormIds = [NSString stringWithFormat:@"http://formgram5.azurewebsites.net/m/openform.aspx?multipage_form_id=%d&navigation=0&multipage_form_group_instance_id=%d&username=guest", 18, multipageFormGroupInstanceId];
@@ -56,3 +60,6 @@ to see all the entries that users entered into this form.
 In the next release, you'll be able to create your own forms and other apps/people can use your new forms too.
 
 In the meantime, fell free to email me at henry@formgram.com with an example of a form you'd like created and I'll create it for you to use.
+
+<h1>Notes</h1>
+In addition to being cross-platform, everything is powered by the cloud, so you can use Formgram in a modular plug-in-play way.  
