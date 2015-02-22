@@ -26,25 +26,25 @@ The code to open a form for your user to fill out is:
 The number 18 is the identifier for an example appointment form.
 
 <h1>Create your own form</h1>
-    // if you've registered on http://formgram5.azurewebsites.net/m then use your username, if not, use "guest"
+If you've registered on http://formgram5.azurewebsites.net/m then use your username, if not, use "guest"
     NSString* username = @"guest";
     
-    // the identifier of the form you want to show on the screen. Change this number to change the form that is shown to the user to be filled out. If you don't need to create a brand new form and want to just use an existing form that someone else already created, then just set this to the multipage_form_id of the form you want to use, e.g. int multipageFormId = 18;
-    // In this case, we're creating a brand new form and we're naming that form "this is anything I want to title my new form"
-    // form titles do "not" need to be unique
-    // All new forms start as blank, so we need to add fields to it
+The identifier of the form you want to show on the screen. Change this number to change the form that is shown to the user to be filled out. If you don't need to create a brand new form and want to just use an existing form that someone else already created, then just set this to the multipage_form_id of the form you want to use, e.g. int multipageFormId = 18;
+In this case, we're creating a brand new form and we're naming that form "this is anything I want to title my new form"
+Form titles do "not" need to be unique
+All new forms start as blank, so we need to add fields to it
     int multipageFormId = [self AddForm:@"this is anything I want to title my new form" myUsername:username];
     
-    // add a one line input text field for user to type in
+Add a one line input text field for user to type in
     multipageFormId = [self AddOrUpdateFormField:multipageFormId myUsername:username fieldId:0 fieldName:@"name" fieldTypeId:1 sequence:100 size:50 listTypeId:0 value:@"Type your name here" enabled:1 htmlID:@"" htmlClass:@"" attributes:@"" outputFormat:1 inputLeft:-1 inputTop:-1 height:-1 width:-1 transform:@""];
     
-    // add a multiple line text field for user to type more stuff in
+Add a multiple line text field for user to type more stuff in
     multipageFormId = [self AddOrUpdateFormField:multipageFormId myUsername:username fieldId:0 fieldName:@"biography" fieldTypeId:6 sequence:200 size:50 listTypeId:0 value:@"Your autobiography" enabled:1 htmlID:@"" htmlClass:@"" attributes:@"" outputFormat:1 inputLeft:-1 inputTop:-1 height:-1 width:-1 transform:@""];
     
-    // add a checkbox
+Add a checkbox
     multipageFormId = [self AddOrUpdateFormField:multipageFormId myUsername:username fieldId:0 fieldName:@"anything" fieldTypeId:3 sequence:300 size:50 listTypeId:0 value:@"this input parameter is not used for checkboxes" enabled:1 htmlID:@"" htmlClass:@"" attributes:@"" outputFormat:1 inputLeft:-1 inputTop:-1 height:-1 width:-1 transform:@""];
     
-    // To start filling out this form, instantiate an object of this form, then store the id of that newly created object in multipageFormGroupInstanceId
+To start filling out this form, instantiate an object of this form, then store the id of that newly created object in multipageFormGroupInstanceId
     int multipageFormGroupInstanceId = [self AddFormInstance:multipageFormId myUsername:username];
 
 <h1>Select the form you want to use</h1>
