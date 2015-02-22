@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  Formgram Example
 //
-//  Created by Bing-Ji Situ on 2/21/15.
-//  Copyright (c) 2015 Bing-Ji Situ. All rights reserved.
+//  Created by Henry Situ on 2/21/15.
+//  Copyright (c) 2015 Henry Situ. All rights reserved.
 //
 
 #import "AppDelegate.h"
