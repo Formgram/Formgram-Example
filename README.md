@@ -51,6 +51,9 @@ To start filling out this form, instantiate an object of this form, then store t
 
     int multipageFormGroupInstanceId = [self AddFormInstance:multipageFormId myUsername:username];
 
+The output will look like this<br>
+<img border="1" src="http://formgram.com/m/screenshots/590x300.png">
+
 <h1>Select the form you want to use</h1>
 Change this number to any other identifier to show a different form.
 
