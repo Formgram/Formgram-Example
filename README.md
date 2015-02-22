@@ -9,7 +9,9 @@ This is done using web services to be cross-platform so any technology stack (su
 
 Formgram is also multi-platform so you can perform any of the below setup steps on any device/platform.  For example, you can create a new form on http://formgram5.azurewebsites.net/m using a desktop browser, then open it using this iOS app to fill it out, then look at what you've filled out using an Android tablet, etc.
 
-The code is very simple:
+You can also create your own forms and other apps/people can use your new forms too.  For details, please see the example in ViewController.m.
+
+The code to open a form for your user to fill out is:
 
     int multipageFormGroupInstanceId = [self AddFormInstance:18 myUsername:@"guest"];
 
@@ -63,11 +65,11 @@ Alternatively, you can use any computer/mobile device to go to http://formgram5.
 to see all the entries that users entered into this form.
 
 <h1>Upcoming Releases</h1>
-In the next release, you'll be able to create your own forms and other apps/people can use your new forms too.
-
-In the meantime, fell free to email me at henry@formgram.com with an example of a form you'd like created and we'll create it for you to use.
+In a future release, you'll be able to update a field you've created. E.g. change the size of a textbox field that's already on your form.
 
 <h1>Notes</h1>
 In addition to being cross-platform, everything is powered by the cloud, so you can use Formgram in a modular plug-in-play way.  
 
 This XCode project was built using Version 6.1.1 (6A2008a)
+
+The above steps are atomic such that you can perform them in any order.  For example, you can fill out a form someone else created, then create a new form for yourself, then look at what's been filled out in another form created by yet another person, then come back and fill out the form you created earlier, then look at the what you filled out, etc.
