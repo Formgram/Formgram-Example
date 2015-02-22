@@ -69,3 +69,5 @@ In the meantime, fell free to email me at henry@formgram.com with an example of 
 
 <h1>Notes</h1>
 In addition to being cross-platform, everything is powered by the cloud, so you can use Formgram in a modular plug-in-play way.  
+
+This XCode project was built using Version 6.1.1 (6A2008a)
