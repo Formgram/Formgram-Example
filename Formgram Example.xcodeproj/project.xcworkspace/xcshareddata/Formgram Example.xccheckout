@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D7D09748-AF5F-4C92-8481-8BE80767A1D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Formgram Example</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EAB8D6B529A5B665947DC3D2B6AC9DA81AACF378</key>
+		<string>https://github.com/Formgram/Formgram-Example.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Formgram Example.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EAB8D6B529A5B665947DC3D2B6AC9DA81AACF378</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Formgram/Formgram-Example.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EAB8D6B529A5B665947DC3D2B6AC9DA81AACF378</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EAB8D6B529A5B665947DC3D2B6AC9DA81AACF378</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Formgram%20Example</string>
+		</dict>
+	</array>
+</dict>
+</plist>

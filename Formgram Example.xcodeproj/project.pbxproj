@@ -14,6 +14,7 @@
 		7C8DC3D81A994A9E00563A85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8DC3D71A994A9E00563A85 /* Images.xcassets */; };
 		7C8DC3DB1A994A9E00563A85 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8DC3D91A994A9E00563A85 /* LaunchScreen.xib */; };
 		7C8DC3E71A994A9E00563A85 /* Formgram_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8DC3E61A994A9E00563A85 /* Formgram_ExampleTests.m */; };
+		7C8DC4011A9AA86300563A85 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8DC4001A9AA86300563A85 /* ReportViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7C8DC3E01A994A9E00563A85 /* Formgram ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Formgram ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8DC3E51A994A9E00563A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8DC3E61A994A9E00563A85 /* Formgram_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Formgram_ExampleTests.m; sourceTree = "<group>"; };
+		7C8DC3FF1A9AA7FA00563A85 /* ReportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		7C8DC4001A9AA86300563A85 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				7C8DC3CF1A994A9E00563A85 /* AppDelegate.m */,
 				7C8DC3D11A994A9E00563A85 /* ViewController.h */,
 				7C8DC3D21A994A9E00563A85 /* ViewController.m */,
+				7C8DC3FF1A9AA7FA00563A85 /* ReportViewController.h */,
+				7C8DC4001A9AA86300563A85 /* ReportViewController.m */,
 				7C8DC3D41A994A9E00563A85 /* Main.storyboard */,
 				7C8DC3D71A994A9E00563A85 /* Images.xcassets */,
 				7C8DC3D91A994A9E00563A85 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8DC4011A9AA86300563A85 /* ReportViewController.m in Sources */,
 				7C8DC3D31A994A9E00563A85 /* ViewController.m in Sources */,
 				7C8DC3D01A994A9E00563A85 /* AppDelegate.m in Sources */,
 				7C8DC3CD1A994A9E00563A85 /* main.m in Sources */,
@@ -414,6 +420,7 @@
 				7C8DC3EC1A994A9E00563A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C8DC3ED1A994A9E00563A85 /* Build configuration list for PBXNativeTarget "Formgram ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				7C8DC3EF1A994A9E00563A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
