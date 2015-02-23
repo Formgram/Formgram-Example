@@ -16,6 +16,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //you can programatically create a form or tap the "Build a Form" tab at the bottom of the screen to use a graphical user interface to build a new form the way you like it.
+    
+    //landscape orientation works best for this view
+    
     // if you've registered on http://formgram5.azurewebsites.net/m then use your username, if not, use "guest"
     self.username = @"guest";
     
@@ -76,6 +80,28 @@
     
     // show the form for the user to fill out
     [self.buildWebView loadRequest:urlRequest];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+
+    /*
+    if ([_textField isFirstResponder] && [touch view] != _textField) {
+        [_textField resignFirstResponder];
+    }
+     */
+    
+   
+     
+    [super touchesBegan:touches withEvent:event];
+}
+
+//TODO: maybe don't need this, but just make the form post if user taps the go key
+//TODO: since this was done using control-click-select, then in order to remove the need for this method, we'll have to delete the objects that are referencing this and re-create them
+-(IBAction)textFieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
 }
 
 -(int) AddForm:(NSString*)formTitle myUsername:(NSString*)username
