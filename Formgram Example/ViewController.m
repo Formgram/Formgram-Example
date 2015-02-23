@@ -45,8 +45,6 @@
     // In this case, <getMultipageFormId></getMultipageFormId> tells Formgram to retrieve the multipageFormId of this form we're in, then put that ID in this string, which will be used as a URL pointing to another screen that will show all the entries each user has submitted to this form.
     NSString *linkToReport = [NSString stringWithFormat:@"http://formgram5.azurewebsites.net/m/report.aspx?multipage_form_id=&lt;getMultipageFormId&gt;&lt;/getMultipageFormId&gt;&amp;username=guest"];
     
-    //TODO: the last mutiplageId is not recorded, so the link to Report is 1 # behind
-    //TODO: why is the 1st field not showing up anymore after adding the save button? Maybe if the fieldTypeId is the same as an existing one, then it replaces the previous one? No, we were able to create 2 checkboxes. It works now, we're able to have 2 fieldTypeIds with fieldTypeId=1.
     // add a link to the report showing all the information each user entered in this form
     multipageFormId = [self AddOrUpdateFormField:multipageFormId myUsername:username fieldId:0 fieldName:@"Report" fieldTypeId:5 sequence:500 size:200 listTypeId:0 value:linkToReport enabled:1 htmlID:@"" htmlClass:@"" attributes:@"" outputFormat:1 inputLeft:-1 inputTop:-1 height:-1 width:-1 transform:@""];
     
