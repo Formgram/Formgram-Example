@@ -20,7 +20,7 @@
     // if you've registered on http://formgram5.azurewebsites.net/m then use your username, if not, use "guest"
     NSString* username = @"guest";
     
-    // the identifier of the form you want to show on the screen. Change this number to change the form that is shown to the user to be filled out. If you don't need to create a brand new form and want to just use an existing form that someone else already created, then just set this to the multipage_form_id of the form you want to use, e.g. int multipageFormId = 18;
+    // the identifier (ID) of the form you want to show on the screen. Change this number to change the form that is shown to the user to be filled out. If you don't need to create a brand new form and want to just use an existing form that someone else already created, then just set this to the multipage_form_id of the form you want to use, e.g. int multipageFormId = 18;
     // In this case, we're creating a brand new form and we're naming that form "this is anything I want to title my new form"
     // form titles do "not" need to be unique
     // All new forms start as blank, so we need to add fields to it
@@ -34,6 +34,21 @@
     
     // add a checkbox
     multipageFormId = [self AddOrUpdateFormField:multipageFormId myUsername:username fieldId:0 fieldName:@"anything" fieldTypeId:3 sequence:300 size:50 listTypeId:0 value:@"this input parameter is not used for checkboxes" enabled:1 htmlID:@"" htmlClass:@"" attributes:@"" outputFormat:1 inputLeft:-1 inputTop:-1 height:-1 width:-1 transform:@""];
+    
+    // add button for user to tap on after the user has filled out the form and wants to submit the form information to be saved
+    // Set outputFormat to 0 so that it won't be printed in a read-only version of this filled-out form.
+    //  Set outputFormat to 1 so that this field will show up in a read-only version of this filled-out form, just as read-only but still appears on the screen.
+    multipageFormId = [self AddOrUpdateFormField:multipageFormId myUsername:username fieldId:0 fieldName:@"Save button" fieldTypeId:19 sequence:400 size:50 listTypeId:0 value:@"Save" enabled:1 htmlID:@"" htmlClass:@"" attributes:@"" outputFormat:0 inputLeft:-1 inputTop:-1 height:-1 width:-1 transform:@""];
+    
+    // the string will be passed in as the "value" parameter of the AddOrUpdateFormField web service so it needs to be encoded, e.g. & should be &amp; and < should be &lt; ...
+    // <getMultipageFormId></getMultipageFormId> is one of the several keywords that does some calculation for us and places the result of that calculation in the place of <getMultipageFormId></getMultipageFormId>
+    // In this case, <getMultipageFormId></getMultipageFormId> tells Formgram to retrieve the multipageFormId of this form we're in, then put that ID in this string, which will be used as a URL pointing to another screen that will show all the entries each user has submitted to this form.
+    NSString *linkToReport = [NSString stringWithFormat:@"http://formgram5.azurewebsites.net/m/report.aspx?multipage_form_id=&lt;getMultipageFormId&gt;&lt;/getMultipageFormId&gt;&amp;username=guest"];
+    
+    //TODO: the last mutiplageId is not recorded, so the link to Report is 1 # behind
+    //TODO: why is the 1st field not showing up anymore after adding the save button? Maybe if the fieldTypeId is the same as an existing one, then it replaces the previous one? No, we were able to create 2 checkboxes. It works now, we're able to have 2 fieldTypeIds with fieldTypeId=1.
+    // add a link to the report showing all the information each user entered in this form
+    multipageFormId = [self AddOrUpdateFormField:multipageFormId myUsername:username fieldId:0 fieldName:@"Report" fieldTypeId:5 sequence:500 size:200 listTypeId:0 value:linkToReport enabled:1 htmlID:@"" htmlClass:@"" attributes:@"" outputFormat:1 inputLeft:-1 inputTop:-1 height:-1 width:-1 transform:@""];
     
     // To start filling out this form, instantiate an object of this form, then store the id of that newly created object in multipageFormGroupInstanceId
     int multipageFormGroupInstanceId = [self AddFormInstance:multipageFormId myUsername:username];
