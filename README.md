@@ -81,9 +81,7 @@ Anyone can fill out this form on any device from anywhere anytime. All they need
 <h1>Save the form</h1>
 select the save button at the bottom of the form.
 
-Ignore the error message that shows up saying "Server Error in '/m' Application. Object reference not set to an instance of an object..."
-
-This security error is showing up since the user has not registered on http://formgram5.azurewebsites.net/m and is trying to login as guest.  This is ok since we're using a generic guest account.  The information typed into the form "is" saved however.  So you can see what saved by going to the URL in urlWithFormIds.
+You can see what is saved in the form by going to the URL in urlWithFormIds.
 
 This form can be filled out from inside an Android app as well.  Just use the Android WebView class' loadUrl method by passing it the urlWithFormIds.
 
